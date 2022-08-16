@@ -1,0 +1,56 @@
+.footer {
+    background-color: rgb(234,231,223);
+}
+
+.footer-container {
+    gap: 20px;
+
+    p:hover {
+        cursor: pointer;
+        color: rgb(202,115,50);
+
+        transition: 0.4s;
+    }
+}
+
+.navbar {
+    padding: 0px;
+}
+
+.navbar-item {
+
+    img{
+        max-height: 100%;
+    }
+
+    .buttons {
+        gap: 12px;
+    }
+
+    .button{
+        border: none;
+        font-size: 13px;
+    }
+
+    &.active {
+        // background-color: red;
+    }
+
+   
+}
+
+
+.navbar-menu {
+    box-shadow: none;
+    height: 130px;
+}
+
+.navbar-start {
+    margin-left: auto;
+}
+
+.navbar-end {
+    margin-right: 20px;
+}
+
+

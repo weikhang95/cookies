@@ -1,1 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import 'main-styles.scss';
+@import '/node_modules/bulma/bulma.sass';
+
+@import '~ngx-owl-carousel-o/lib/styles/scss/owl.carousel';
+@import '~ngx-owl-carousel-o/lib/styles/scss/owl.theme.default';
+
+
+
+
+// $brown: rgb(202,115,50);
+// $primary: $brown;

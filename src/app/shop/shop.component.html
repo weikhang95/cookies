@@ -1,0 +1,33 @@
+<div>
+    <nav class="breadcrumb is-left" aria-label="breadcrumbs">
+        <ul>
+          <li><a href="#" routerLink="">Home</a></li>
+          <li><a routerLink="../shop">Products</a></li>
+          <li class="is-active"><a href="#" aria-current="page"></a></li>
+        </ul>
+    </nav>
+</div>
+
+<div class="container">
+    <div class="row" style="gap: 20px;">
+        <ng-container *ngFor="let item of filterCategory | filter:searchKey:'title'">
+
+        
+            <div fxLayout="column" >
+                <div class="image-container">
+                  <figure class="image" >
+                    <img src="{{item.mainImage}}"  alt="">
+                  </figure>
+                </div>
+                <span style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis; color: #999999; font-size: .85rem">
+                    {{item.category}}</span>
+                <p style="white-space: pre-wrap;overflow: hidden ;max-width: 245px; font-size: 15px">{{item.title}}</p>
+                <!-- <p style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis;max-width: 100ch;">{{item.description}}</p> -->
+                <strong style="font-size: 14px" >RM{{item.price}}</strong>
+                <button class="button is-primary" style="width: 60%; margin-top: 10px" (click)=addtocart(item)>Add to cart</button>
+            </div>
+         
+        </ng-container>
+
+    </div>
+</div>

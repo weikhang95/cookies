@@ -1,0 +1,41 @@
+.home-products {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 80px;
+}
+
+.home-product {
+    padding: 0px 10px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    
+}
+
+.home-products-intro {
+    font-size: 38px;
+    color:#463834;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom:15px;
+    margin-top: 40px;
+}
+
+.home-products-sub-intro {
+    text-align: center;
+    color: #C57230;
+    font-family: "Spectral", Sans-serif;
+    margin-bottom: 35px;
+    font-size: 19px;
+}
+
+
+.home-product-link{
+    color: #4a4a4a;
+
+    &:hover {
+        color:#C57230;
+        transition: 0.4s;
+    }
+}

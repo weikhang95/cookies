@@ -1,0 +1,99 @@
+
+
+// @charset "utf-8";
+// @import "/node_modules/bulma/sass/utilities/initial-variables";
+// @import "/node_modules/bulma/sass/utilities/functions";
+// @import '/node_modules/bulma/bulma.sass';
+
+@import "https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css";
+@import "https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/css/bulma-carousel.min.css";
+
+
+// Your styles
+@import url('https://fonts.googleapis.com/css?family=Spectral:400,700');
+
+
+$brown: rgb(202,115,50);
+$primary: $brown;
+
+
+
+
+// $navbar-burger-color: #f1f1f1;
+// $navbar-background-color: #273643;
+// $navbar-item-hover-background-color: #3f4f62;
+$navbar-item-hover-color: $primary;
+// $navbar-item-color: $primary;
+$navbar-dropdown-arrow: $primary;
+$navbar-tab-active-color: $primary;
+// $navbar-tab-active-background-color: #273643;
+// $navbar-dropdown-background-color: $primary;
+
+owl-carousel-o {
+    // position: relative;
+    // height: 100vh;
+    // width: 100%;
+    // top: 0;
+    // left: 0;
+  }
+  
+  .owl-item {
+    height: 50%;
+    width: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+  
+  .owl-theme .owl-dots .owl-dot span {
+    width: 6px !important;
+    height: 6px !important;
+  }
+  
+  /* img {
+    width: 100%;
+    height: auto;
+    max-width: 99vh;
+  } */
+  
+  /* Feel free to change duration  */ 
+  .animated  {
+    -webkit-animation-duration : 1000 ms  ;
+    animation-duration : 1000 ms  ;
+    -webkit-animation-fill-mode : both  ;
+    animation-fill-mode : both  ;
+  }  
+  /* .owl-animated-out - only for current item */ 
+  /* This is very important class. Use z-index if you want move Out item above In item */ 
+  .owl-animated-out {
+    z-index : 1 
+     }
+  /* .owl-animated-in - only for upcoming item
+  /* This is very important class. Use z-index if you want move In item above Out item */ 
+  .owl-animated-in {
+    z-index : 0 
+     }
+  /* .fadeOut is style taken from Animation.css and this is how it looks in owl.carousel.css:  */ 
+  .fadeOut  {
+    -webkit-animation-name : fadeOut  ;
+    animation-name : fadeOut  ;
+  }  
+  @-webkit-keyframes  fadeOut  {
+    0% {
+      opacity : 1   ;
+    }  
+    100% {
+      opacity : 0   ;
+    }  
+  }
+  @keyframes  fadeOut  {
+    0% {
+      opacity : 1   ;
+    }  
+    100% {
+      opacity : 0   ;
+    }  
+  }
+
+  $breadcrumb-item-color: #4a4a4a;
+  $breadcrumb-item-hover-color: $primary;

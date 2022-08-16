@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "cookies-20249"
+  },
+  "targets": {
+    "cookies-20249": {
+      "hosting": {
+        "february-eats": [
+          "cookies-20249"
+        ]
+      }
+    }
+  }
+}

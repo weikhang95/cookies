@@ -1,0 +1,65 @@
+
+<div class="container">
+    请留下您的联络方式，我们将会尽快回复
+
+    <form (ngSubmit)="onSubmit(userForm)" class="form-container" #userForm="ngForm" > 
+        <div class="columns form-group" ngModelGroup="userData" #userData="ngModelGroup" fxLayout="column" fxLayoutGap="20px">
+            <div fxLayout="column">
+                <label class="label">Name</label>
+                <div fxLayout="row" class="block">
+                    <input class="column input is-normal form-control" style="max-width:25%" type="text" name="firstName" placeholder="First" required ngModel> 
+                    <input class="column input is-normal form-control" style="max-width:25%" type="text" name="lastName" placeholder="Last" required ngModel> 
+                    
+                </div>
+            </div>
+            
+            <div fxLayout="column">
+                <label class="label">Phone</label>
+                <ngx-intl-tel-input
+                    
+                    [preferredCountries]="preferredCountries"
+                    [enableAutoCountrySelect]="true"
+                    [enablePlaceholder]="true"
+                    [searchCountryFlag]="true"
+                    customPlaceholder="012-345 6789"
+                    [searchCountryField]="[SearchCountryField.Iso2,SearchCountryField.Name]"
+                    [selectFirstCountry]="false"
+                    [selectedCountryISO]="CountryISO.Malaysia"
+                    [maxLength]="15"
+                    [phoneValidation]="true"
+                    [separateDialCode]="separateDialCode"
+                    [numberFormat]="PhoneNumberFormat.National"
+                    name="phone"
+                    ngModel>
+                </ngx-intl-tel-input>
+
+            </div>
+
+            <div fxLayout="column">
+                <label class="label">Email</label>
+                <input class="column input is-normal is-half form-control" ngModel name="email" type="email" required email>
+                <small>E.g. abc@gmail.com</small>
+            </div>
+            
+            <div fxLayout="column">
+                <label class="label">Remark</label>
+                <textarea class="textarea" ngModel name="remark" placeholder="e.g. Hello world"></textarea>
+            </div>
+
+            <!-- <re-captcha [(ngModel)]="formModel.captcha" name="captcha" required #captchaControl="ngModel"></re-captcha> -->
+            <re-captcha #recaptcha ngModel name="captcha" required #captchaControl="ngModel"></re-captcha>
+
+        </div>
+
+        <br/> 
+        <br/> 
+        <button 
+            type="submit" 
+            value="submit" 
+            class="button is-primary"
+            [disabled]="!userForm.valid"
+            style="margin-bottom: 40px"
+        >Submit</button> 
+     </form>
+
+</div>

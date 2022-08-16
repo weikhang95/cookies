@@ -1,0 +1,72 @@
+<div fxLayout="column">
+
+
+    <section style="height: 100%">
+        <!-- <div class="container"> -->
+        <div class="carousel">
+
+            <owl-carousel-o [options]="customOptions">
+
+                <!-- <ng-container *ngFor="let slide of apiData"> -->
+                <ng-container>
+                    <ng-template class="slide" carouselSlide id="0">
+                        <img src="https://februaryeats.com/wp-content/uploads/2022/08/Atticus-and-Tick-scaled.jpg"
+                            alt="Atticus and Tick" title="Atticus and Tick">
+                    </ng-template>
+                    <!-- <ng-template carouselSlide dotContent="content">Atticus and Tick</ng-template> -->
+                    <ng-template class="slide" carouselSlide id="1">
+                        <img src="https://februaryeats.com/wp-content/uploads/2022/08/Februaryeats.jpg"
+                            alt="Februaryeats" title="Februaryeats">
+                    </ng-template>
+                    <ng-template class="slide" carouselSlide id="2">
+                        <img src="https://februaryeats.com/wp-content/uploads/2022/08/Februaryeats-banner.jpg"
+                            alt="Februaryeats banner" title="Februaryeats banner">
+                    </ng-template>
+                </ng-container>
+
+            </owl-carousel-o>
+        </div>
+
+        <!-- </div> -->
+
+
+    </section>
+
+    <section>
+        <div style="justify-content: center;display: flex;">
+            <img width="1594" height="300"
+                src="https://februaryeats.com/wp-content/uploads/2022/08/Februaryeats-Slogan.jpg"
+                class="attachment-2048x2048 size-2048x2048" alt="" loading="lazy"
+                srcset="https://februaryeats.com/wp-content/uploads/2022/08/Februaryeats-Slogan.jpg 1594w, https://februaryeats.com/wp-content/uploads/2022/08/Februaryeats-Slogan-300x56.jpg 300w, https://februaryeats.com/wp-content/uploads/2022/08/Februaryeats-Slogan-1024x193.jpg 1024w, https://februaryeats.com/wp-content/uploads/2022/08/Februaryeats-Slogan-768x145.jpg 768w, https://februaryeats.com/wp-content/uploads/2022/08/Februaryeats-Slogan-1536x289.jpg 1536w, https://februaryeats.com/wp-content/uploads/2022/08/Februaryeats-Slogan-1320x248.jpg 1320w, https://februaryeats.com/wp-content/uploads/2022/08/Februaryeats-Slogan-600x113.jpg 600w"
+                sizes="(max-width: 1594px) 100vw, 1594px">
+        </div>
+    </section>
+
+    <section>
+        <div class="container" fxLayout="column">
+            <h1 class="home-products-intro">
+                两种口味
+            </h1>
+            <p class="home-products-sub-intro">c o o k i e s&nbsp; s e r i e s</p>
+        </div>
+    </section>
+
+    <section>
+        <div class="home-products has-text-centered">
+            <div class="home-product">
+                <a routerLink="shop">
+                    <img class="swiper-slide-image"
+                        src="https://februaryeats.com/wp-content/uploads/elementor/thumbs/Product_Choc_1-pswni6f4gnotfiksr2sj3v269zgpoke13abf0zawzs.jpg"
+                        alt="海盐巧克⼒曲奇" routerLink="../shop">
+                </a>
+                <a class="home-product-link" routerLink="../shop">海盐巧克⼒曲奇</a>
+            </div>
+            <div class="home-product" >
+                <img class="swiper-slide-image"
+                    src="https://februaryeats.com/wp-content/uploads/elementor/thumbs/Product_Almond_1-2-pswnmvm2mu4fhbr1b3xdkod57cas631pqjqtesc1vs.jpg"
+                    alt="杏仁巧克⼒曲奇" routerLink="../shop">
+                <a class="home-product-link" routerLink="../shop">杏仁巧克⼒曲奇</a>
+            </div>
+        </div>
+    </section>
+</div>
